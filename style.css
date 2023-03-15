@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.GameContainer{
+    background-image: url(bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.Survive{
+    visibility: visible;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 100px;
+
+    font-family: monospace;
+}
+
+.GameOver{
+    visibility: hidden;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 100px;
+
+    font-family: monospace;
+
+}
+#final{
+
+    visibility: hidden;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 100px;
+
+    font-family: monospace;
+
+}
+
+#ScoreCont{
+    position: absolute;
+    border: 2px solid black;
+    font-size: 1.3em;
+    padding: 10px;
+    width: 7em;
+    color: white;
+    font-weight: bolder;
+    right: 10px;
+    top: 4em;
+}
+
+.hero{
+    background-image: url(hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 50px;
+    width: 10em;
+    height: 10em;
+    left: 30px;
+
+   
+}
+
+.obstacle{
+    background-image: url(dragon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 40px;
+    width: 8em;
+    height: 8em;
+    left: 80vw;
+    
+    
+}
+
+.animateHero{
+    animation: hero 0.6s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+
+@keyframes hero
+{
+    0%{
+        bottom: 50px;
+    }
+    50%{
+
+        bottom: 400px;
+
+    }
+    100%{
+
+        bottom: 50px;
+
+    }
+    
+}
+
+@keyframes obstacleAni {
+
+    0%{
+       left: 100vw; 
+    }
+    100%{
+
+        left: -10vw;
+
+    }
+    
+}

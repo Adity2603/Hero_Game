@@ -4,4 +4,4 @@ Simple Survival Game
 
 Tech Stacks : HTML , CSS , JS 
 
-Live Demo : - 
+<a href = "https://adity2603.github.io/Hero_Game/"> Live Demo </a>
